@@ -1,0 +1,10 @@
+Xft.dpi: 95.0
+
+# charclass let url selection with only a double click
+xterm*charClass: 33:48,35:48,37-38:48,43-47:48,58:48,61:48,63-64:48,95:48,126:48
+xterm*scrollBar:false
+xterm*font:-*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*
+xterm*background: black
+xterm*foreground: white
+xterm*cursorColor: green
+xterm*loginShell: true
