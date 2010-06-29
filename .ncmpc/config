@@ -1,1 +1,17 @@
-/home/romain/.ncmpc/config
+auto-center = yes
+set-xterm-title = yes
+hide-cursor = 5
+xterm-title-format = "ncmpc"
+seek-time = 3
+enable-colors = yes
+color background = none
+color title = cyan
+color title-bold = brightcyan
+color line = cyan
+color line-flags = brightcyan
+color list = white
+color list-bold = brightwhite
+color progressbar = cyan
+color status-state = brightwhite
+color status-song = white
+color status-time = cyan 
