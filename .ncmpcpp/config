@@ -138,7 +138,7 @@ mpd_music_dir = "/home/romain/music"
 ## Note: colors can be nested.
 ##
 #
-song_list_format = "{%a - }{%t}|{$8%f$9}$R{$7(%l)$9}"
+song_list_format = "{%a - {(%y) }|{ }%b - %n - }{%t}|{$8%f$9}$R{$7(%l)$9}"
 #
 #song_status_format = "{{%a{ \"%b\"{ (%y)}} - }{%t}}|{%f}"
 #
