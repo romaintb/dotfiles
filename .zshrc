@@ -8,7 +8,7 @@ export LS_COLORS='di=1;36' # linux
 export HISTFILE=~/.zsh_history
 export HISTSIZE=50000
 export SAVEHIST=50000
-export PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin:$HOME/bin
+export PATH=$HOME/bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
 export EDITOR=vim
 
 
