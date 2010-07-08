@@ -1,7 +1,6 @@
 " Vim color file
-" Maintainer: arg
-" Based On:   ../minimalblue/minimalblue.vim
-" Based On:   http://fugal.net/vim/colors/bw.vim
+"
+" Based on suckless.org bluegray
 
 " cool help screens
 " :he group-name
