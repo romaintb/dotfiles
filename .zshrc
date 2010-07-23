@@ -27,6 +27,11 @@ alias startx='echo nan, pas bien, utilise la commande x'
 alias x='/usr/bin/startx; exit'
 alias todo="w2do --color"
 
+# git
+alias gci='git commit'
+alias gpom='git push origin master'
+alias gup='git pull origin master'
+
 
 # ================== #
 # Les options de ZSH #
