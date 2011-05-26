@@ -1,10 +1,17 @@
-Xft.dpi: 95.0
+Xft*antialias: true
+Xft*dpi:	92
+Xft*rgba: rgb
+Xft*hinting: true
+Xft*hintstyle: hintslight
 
-# charclass let url selection with only a double click
-xterm*charClass: 33:48,35:48,37-38:48,43-47:48,58:48,61:48,63-64:48,95:48,126:48
-xterm*scrollBar:false
-xterm*font:-*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*
-xterm*background: black
-xterm*foreground: white
-xterm*cursorColor: green
-xterm*loginShell: true
+xterm*background:	black
+xterm*scrollBar:	false
+xterm*cursorColor:	green
+xterm*foreground:	white
+xterm*font:	-*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*
+xterm*charClass:	33:48,35:48,37-38:48,43-47:48,58:48,61:48,63-64:48,95:48,126:48
+xterm*loginShell:	true
+xrenoise.use_xcursors:	1
+xrenoise.display:	:0.0
+xrenoise.display_resource:	0x00,0x00,0xAF,0x07,0x5C,0xB6,0x2A,0x7B
+xrenoise.executable_path:	/usr/local/bin/renoise-2.6.1
