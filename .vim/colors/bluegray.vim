@@ -32,7 +32,7 @@ hi DiffAdd		cterm=bold			ctermfg=none
 hi DiffChange		cterm=bold			ctermfg=none
 hi DiffDelete		cterm=bold			ctermfg=none
 hi DiffText		cterm=reverse			ctermfg=none
-hi Comment		cterm=reverse			ctermfg=4
+hi Comment		cterm=reverse			ctermfg=6
 hi Constant		cterm=none			ctermfg=6
 hi Special		cterm=bold			ctermfg=none
 hi Identifier		cterm=bold			ctermfg=none
