@@ -44,4 +44,4 @@ compinit
 # les prompts de zsh (prompt -l, -p ...)
 autoload -U promptinit
 promptinit
-prompt adam1 blue
+prompt adam1 white
