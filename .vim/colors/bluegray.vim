@@ -35,8 +35,8 @@ hi DiffText		cterm=reverse			ctermfg=none
 hi Comment		cterm=reverse			ctermfg=6
 hi Constant		cterm=none			ctermfg=6
 hi Special		cterm=bold			ctermfg=none
-hi Identifier		cterm=none			ctermfg=none
-hi Statement		cterm=none			ctermfg=4
+hi Identifier		cterm=bold			ctermfg=none
+hi Statement		cterm=bold			ctermfg=4
 hi PreProc							ctermfg=none
 hi Type			cterm=bold			ctermfg=4
 hi Underlined		cterm=underline		ctermfg=none
