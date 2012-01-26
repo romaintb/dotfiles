@@ -4,36 +4,21 @@ Xft*rgba: rgb
 Xft*hinting: true
 Xft*hintstyle: hintslight
 
-!xterm*background:	black
+xterm*background:	black
 xterm*scrollBar:	false
-xterm*cursorColor:	#3c6f69
-!xterm*foreground:	white
+xterm*cursorColor:	green
+xterm*foreground:	lightgrey
 xterm*font:	-*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*
 xterm*charClass:	33:48,35:48,37-38:48,43-47:48,58:48,61:48,63-64:48,95:48,126:48
 xterm*loginShell:	true
-xrenoise.use_xcursors:	1
-xrenoise.display:	:0.0
-xrenoise.display_resource:	0x00,0x00,0xAF,0x07,0x5C,0xB6,0x2A,0x7B
-xrenoise.executable_path:	/usr/local/bin/renoise-2.6.1
 
-!xterm*font: xft:DejaVu Sans Mono-9:book:autohint=true:hinting=true
-!xterm*boldFont: xft:DejaVu Sans Mono-9:book:autohint=true:hinting=true
-xterm*foreground: #313131
-xterm*background: #f0f0f0
-
-xterm*color0 :  #252525
-xterm*color1 :  #ba7373
-xterm*color2 :  #739456
-xterm*color3 :  #a4712e
-xterm*color4 :  #25414f
-xterm*color5 :  #6f4f70
-xterm*color6 :  #3c6f69
-xterm*color7 :  #ffffff
-xterm*color8 :  #666666
-xterm*color9 :  #c14b4b
-xterm*color10:  #6ca318
-xterm*color11:  #7f672e
-xterm*color12:  #537595
-xterm*color13:  #a971a7
-xterm*color14:  #70999a
-xterm*color15:  #cacaca
+urxvt*background:	black
+urxvt*scrollBar:	false
+urxvt*cursorColor:	green
+urxvt*foreground:	lightgrey
+urxvt*font:	-*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*
+urxvt*charClass:	33:48,35:48,37-38:48,43-47:48,58:48,61:48,63-64:48,95:48,126:48
+urxvt*loginShell:	true
+urxvt*inheritPixmap:true
+urxvt*tint:         black
+urxvt*shading:      10
