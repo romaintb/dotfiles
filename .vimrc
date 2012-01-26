@@ -1,6 +1,11 @@
 syntax on
 
-color bluegray
+if has('gui_running')
+    set guifont=Terminus\ 8
+    color mustang
+else
+    color bluegray
+endif
 
 set nonumber
 set nocp
