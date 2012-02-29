@@ -4,7 +4,9 @@ if has('gui_running')
     set guifont=Terminus\ 8
     color mustang
 else
-    color bluegray
+    set t_Co=256
+    set background=light
+    color lucius
 endif
 
 set nonumber
