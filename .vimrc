@@ -24,6 +24,12 @@ set shiftwidth=4
 set softtabstop=4
 "set textwidth=80
 
+" mouse can be used in term :)
+set mouse=a
+
+" allow backspacing over everything in insert mode. works on openbsd ??
+set backspace=2
+
 let html_use_css=1
 let html_no_pre=1
 let html_use_xhtml=1
