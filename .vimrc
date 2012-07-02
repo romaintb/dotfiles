@@ -1,8 +1,11 @@
 syntax on
 
+call pathogen#infect()
+
 if has('gui_running')
     set guifont=Terminus\ 8
-    color mustang
+   " color mustang
+    color lucius
 else
     set t_Co=256
     set background=light
@@ -29,6 +32,10 @@ set mouse=a
 
 " allow backspacing over everything in insert mode. works on openbsd ??
 set backspace=2
+
+" ctrlp plugin
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_working_path_mode = 2
 
 let html_use_css=1
 let html_no_pre=1

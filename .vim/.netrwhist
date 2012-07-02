@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/romain/.ncmpc'
 let g:netrw_dirhist_2='/home/romain/.offlineimap'
 let g:netrw_dirhist_3='/home/romain/.mutt'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/home/romain/workspace/dotfiles/.ncmpc'
 let g:netrw_dirhist_5='/home/romain/workspace/dotfiles/dwm/dwm-5.9.org'
 let g:netrw_dirhist_6='/home/romain/.ncmpcpp'
 let g:netrw_dirhist_7='/home/romain/bin/sunvox'
+let g:netrw_dirhist_8='/home/romain/work/ykone_fruity-trunk/application'

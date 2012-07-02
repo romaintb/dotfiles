@@ -8,7 +8,7 @@ export LS_COLORS='di=1;36' # linux
 export HISTFILE=~/.zsh_history
 export HISTSIZE=50000
 export SAVEHIST=50000
-export PATH=$HOME/bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
+export PATH=$HOME/bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin:/var/lib/gems/1.8/bin
 export EDITOR=vim
 
 
@@ -44,4 +44,4 @@ compinit
 # les prompts de zsh (prompt -l, -p ...)
 autoload -U promptinit
 promptinit
-prompt adam1 white
+prompt adam1 blue

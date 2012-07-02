@@ -5,7 +5,7 @@ static const char font[]            = "-*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
 static const char normbordercolor[] = "#333333";
 static const char normbgcolor[]     = "#000000";
 static const char normfgcolor[]     = "#ffffff";
-static const char selbordercolor[]  = "#ffffff";
+static const char selbordercolor[]  = "#ff0000";
 static const char selbgcolor[]      = "#666666";
 static const char selfgcolor[]      = "#ffffff";
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
@@ -48,7 +48,7 @@ static const Layout layouts[] = {
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 //static const char *termcmd[]  = { "urxvt", NULL };
-static const char *termcmd[]  = { "xterm", NULL };
+static const char *termcmd[]  = { "xfce4-terminal", NULL };
 static const char *mpdprevcmd[]    = { "mpc",     "prev",   NULL };
 static const char *mpdnextcmd[]    = { "mpc",     "next",   NULL };
 static const char *mpdtogglecmd[]  = { "mpc",     "toggle", NULL };
