@@ -2,7 +2,8 @@
 # Les variables de l'environnement #
 # ================================ #
 source /etc/profile
-export TERM=xterm-color #oui, des couleurs, pleins
+#export TERM=xterm-color #oui, des couleurs, pleins
+export TERM="xterm-256color"
 #export LSCOLORS="Gxfxcxdxbxegedabagacad" # bsd
 export LS_COLORS='di=1;36' # linux
 export HISTFILE=~/.zsh_history
