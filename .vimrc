@@ -37,6 +37,16 @@ set backspace=2
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 2
 
+" nerdtree plugin
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+map <F2> :NERDTreeToggle<CR>
+
+" tagbar plugin
+let g:tagbar_usearrows = 1
+map <F3> :TagbarToggle<CR>
+
+
 let html_use_css=1
 let html_no_pre=1
 let html_use_xhtml=1
