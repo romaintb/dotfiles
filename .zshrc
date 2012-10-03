@@ -24,9 +24,6 @@ alias ll='ls -l'
 alias lal='ls -al'
 alias 'cd..'='cd ..'
 alias df='df -h'
-alias startx='echo nan, pas bien, utilise la commande x'
-alias x='/usr/bin/startx; exit'
-alias todo="w2do --color"
 
 # git
 alias gci='git commit'
