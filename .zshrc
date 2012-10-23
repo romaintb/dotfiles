@@ -38,8 +38,23 @@ alias gup='git pull origin master'
 # autocompletion
 autoload -U compinit
 compinit
+setopt no_auto_menu
+
 
 # les prompts de zsh (prompt -l, -p ...)
 autoload -U promptinit
 promptinit
 prompt adam1 blue
+
+
+# zen
+fpath=(
+    $fpath
+    /home/romain/.zen/zsh/scripts
+    /home/romain/.zen/zsh/zle )
+autoload -U zen
+#zen update
+
+#bindkey '^R' history-incremental-search-backward
+bindkey -e
+
