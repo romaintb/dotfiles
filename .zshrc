@@ -16,8 +16,9 @@ export EDITOR=vim
 # ========= #
 # Les alias #
 # ========= #
-#alias ls='colorls -GF'  #bsd
-alias ls='ls --color -F' #linux
+#alias ls='colorls -GF'  #openbsd
+#alias ls='ls --color -F' #linux
+alias ls='ls -G' #mac
 alias l='ls'
 alias la='ls -a'
 alias ll='ls -l'
