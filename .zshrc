@@ -1,61 +1,41 @@
-# ================================ #
-# Les variables de l'environnement #
-# ================================ #
-source /etc/profile
-#export TERM=xterm-color #oui, des couleurs, pleins
-export TERM="xterm-256color"
-#export LSCOLORS="Gxfxcxdxbxegedabagacad" # bsd
-export LS_COLORS='di=1;36' # linux
-export HISTFILE=~/.zsh_history
-export HISTSIZE=50000
-export SAVEHIST=50000
-export PATH=$HOME/bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin:/var/lib/gems/1.8/bin
-export EDITOR=vim
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
 
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
-# ========= #
-# Les alias #
-# ========= #
-#alias ls='colorls -GF'  #openbsd
-#alias ls='ls --color -F' #linux
-alias ls='ls -G' #mac
-alias l='ls'
-alias la='ls -a'
-alias ll='ls -l'
-alias lal='ls -al'
-alias 'cd..'='cd ..'
-alias df='df -h'
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# git
-alias gci='git commit'
-alias gpom='git push origin master'
-alias gup='git pull origin master'
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
 
+# Comment this out to disable bi-weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
 
-# ================== #
-# Les options de ZSH #
-# ================== #
+# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
 
-# autocompletion
-autoload -U compinit
-compinit
-setopt no_auto_menu
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
 
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
 
-# les prompts de zsh (prompt -l, -p ...)
-autoload -U promptinit
-promptinit
-prompt adam1 blue
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+# COMPLETION_WAITING_DOTS="true"
 
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git brew capistrano composer github osx terminalapp themes)
 
-# zen
-fpath=(
-    $fpath
-    /home/romain/.zen/zsh/scripts
-    /home/romain/.zen/zsh/zle )
-autoload -U zen
-#zen update
+source $ZSH/oh-my-zsh.sh
 
-#bindkey '^R' history-incremental-search-backward
-bindkey -e
-
+# Customize to your needs...
+EDITOR=vim
