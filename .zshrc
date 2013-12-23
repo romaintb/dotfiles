@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="af-magic"
+ZSH_THEME="bureau"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -33,11 +33,24 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew capistrano composer github osx terminalapp themes)
+plugins=(git virtualenv brew capistrano composer github osx terminalapp themes)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-EDITOR=vim
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# all this for the vi mode
+set editing-mode vi
+set blink-matching-paren on
+bindkey -v
+export KEYTIMEOUT=1 # remove that 0.4s lag
+
+EDITOR=vim
+alias ls='ls -pG'
+
+export PATH="/usr/local/bin:$HOME/.composer/vendor/bin:$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+BASE16_SCHEME="default"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
