@@ -3,6 +3,9 @@ require 'hirb'
 require 'interactive_editor'
 require 'fancy_irb'
 require "awesome_print"
+require 'irb/completion'
+
+IRB.conf[:AUTO_INDENT]=true
 
 FancyIrb.start :colorize => {
     :rocket_prompt => [:blue],
