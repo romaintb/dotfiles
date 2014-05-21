@@ -33,7 +33,7 @@ ZSH_THEME="bureau"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git virtualenv brew capistrano composer github osx terminalapp themes)
+plugins=(git brew osx themes)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,7 +48,7 @@ export KEYTIMEOUT=1 # remove that 0.4s lag
 EDITOR=vim
 alias ls='ls -pG'
 
-export PATH="/usr/local/bin:$HOME/.composer/vendor/bin:$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 BASE16_SCHEME="default"
