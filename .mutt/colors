@@ -1,0 +1,66 @@
+# $id mutt/colors 2010-08-11 03:10:45 patrice
+# Colors setup
+
+# Colorize attachment
+color attachment brightmagenta default
+# Errors yell at you in red
+color error brightwhite red
+# Colorize headers
+color hdrdefault red black
+# Currently selected message
+color indicator brightyellow blue
+# The + for wrapped pager lines
+color markers brightcyan default
+# Informational messages, not mail
+color message brightcyan default
+# Background color
+color normal default default
+# Quoted text
+color quoted green default
+# Highlight search patterns in the pager
+color search brightgreen default
+
+# Signature (after "-- ") is red
+color signature red default
+# Status bar is yellow *on blue*
+color status brightyellow blue
+# ~'s after message body
+color tilde blue default
+# Thread tree in index menu
+color tree red default
+color signature brightred default
+color underline yellow default
+# Important headers
+color header cyan black ^(From|Subject):
+# URLs
+color body magenta default "(ftp|http|svn|ssh)://[^ ]+"
+color body magenta default [-a-z_0-9.]+@[-a-z_0-9.]+
+
+# Colorize quoted text - colorize the first 7 levels:
+color quoted   cyan default
+color quoted1  yellow default
+color quoted2  red default
+color quoted3  green default
+color quoted4  cyan default
+color quoted5  yellow default
+color quoted6  red default
+color quoted7  green default
+
+# Bold text
+color body brightblue  white "(^|[^[:alnum:][:punct:]])\\*[[:alnum:][:punct:]]+\\*([^[:alnum:][:punct:]]|$)"
+# Italic text
+color body brightblue  white "(^|[^[:alnum:][:punct:]])/[[:alnum:][:punct:]]+/([^[:alnum:][:punct:]]|$)"
+# Underline text
+color body brightblue  white "(^|[^[:alnum:][:punct:]])_[[:alnum:][:punct:]]+_([^[:alnum:][:punct:]]|$)"
+
+# New mail
+color index brightyellow default ~N      
+# Old mail
+color index yellow default ~O            
+# Forwarded mail
+color index magenta default ~F          
+# Tagged mail
+color index blue default ~T             
+# Deleted mail
+color index red default ~D              
+

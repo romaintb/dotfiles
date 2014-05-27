@@ -1,0 +1,18 @@
+# Mail headers setup
+# MIME type used to invoke a 3rd party program to view/read it
+# This entry will use .mailcap file located in your home.
+auto_view text/html
+
+# Ignore everything except those specified
+ignore *
+unignore From:
+unignore To:
+unignore Subject:
+unignore Date:
+unignore CC:
+unignore BCC:
+unignore X-Mailer:
+unignore User-Agent:
+
+# And organise them
+hdr_order From: Subject: To: CC: BCC: Date: User-Agent: X-Mailer:
