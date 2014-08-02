@@ -46,7 +46,6 @@ bindkey -v
 export KEYTIMEOUT=1 # remove that 0.4s lag
 
 EDITOR=vim
-alias ls='ls -pG'
 
 export PATH="/usr/local/bin:$HOME/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -57,6 +56,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 
 case `uname` in
     Darwin)
+        alias ls='ls -pG'
         alias vim='reattach-to-user-namespace vim'
         ;;
     Linux)
