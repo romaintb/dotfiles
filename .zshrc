@@ -47,7 +47,9 @@ export KEYTIMEOUT=1 # remove that 0.4s lag
 
 EDITOR=vim
 
-export PATH="/usr/local/bin:$HOME/bin:$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/bin:$HOME/.rbenv/bin:/usr/local/opt/go/libexec/bin:$PATH"
+export GOPATH="$HOME/.go"
+export LARAVEL_ENV="local"
 eval "$(rbenv init -)"
 
 BASE16_SCHEME="default"
