@@ -51,6 +51,8 @@ set forward_format="[Fwd: %s]"
 # Delimit forwarded message with some quote delimiters
 set forward_quote
 
+set sleep_time=0
+
 # Include files
 # Colors setup
 source ~/.mutt/colors
