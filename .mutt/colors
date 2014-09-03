@@ -1,66 +1,45 @@
-# $id mutt/colors 2010-08-11 03:10:45 patrice
-# Colors setup
+#
+# title:    vimbrant - a mutt color scheme
+# author:   thayer williams
+# website:  http://cinderwick.ca/
+#
 
-# Colorize attachment
-color attachment brightmagenta default
-# Errors yell at you in red
-color error brightwhite red
-# Colorize headers
-color hdrdefault red black
-# Currently selected message
-color indicator brightyellow blue
-# The + for wrapped pager lines
-color markers brightcyan default
-# Informational messages, not mail
-color message brightcyan default
-# Background color
-color normal default default
-# Quoted text
-color quoted green default
-# Highlight search patterns in the pager
-color search brightgreen default
+color   normal      white           default     # default colours
+color   index       red             default ~N  # new messages
+color   index       green           default ~F  # flagged messages
+color   index       blue            default ~T  # tagged messages
+color   index       white           red     ~D  # deleted messages
+color   body        yellow          default     (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
+color   body        brightyellow    default     [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+color   attachment  magenta         default     # attachments
+color   signature   brightwhite     default     # sigs
+color   search      brightred       black       # highlight results
 
-# Signature (after "-- ") is red
-color signature red default
-# Status bar is yellow *on blue*
-color status brightyellow blue
-# ~'s after message body
-color tilde blue default
-# Thread tree in index menu
-color tree red default
-color signature brightred default
-color underline yellow default
-# Important headers
-color header cyan black ^(From|Subject):
-# URLs
-color body magenta default "(ftp|http|svn|ssh)://[^ ]+"
-color body magenta default [-a-z_0-9.]+@[-a-z_0-9.]+
+color   indicator   black           cyan        # currently highlighted message
+color   error       red             default     # error messages
+color   status      brightwhite     cyan        # status line (unread msgs, current dir, etc.)
+color   markers     brightwhite     cyan        # shortcut statusline (q:Quit, etc.)
+color   tree        yellow          default     # tree thread arrows
+color   tilde       cyan            default     # blank line padding
 
-# Colorize quoted text - colorize the first 7 levels:
-color quoted   cyan default
-color quoted1  yellow default
-color quoted2  red default
-color quoted3  green default
-color quoted4  cyan default
-color quoted5  yellow default
-color quoted6  red default
-color quoted7  green default
+color   hdrdefault  black           cyan        # default headers
+color   header      brightwhite     cyan        "^From:"
+color   header      brightwhite     cyan        "^Subject:"
 
-# Bold text
-color body brightblue  white "(^|[^[:alnum:][:punct:]])\\*[[:alnum:][:punct:]]+\\*([^[:alnum:][:punct:]]|$)"
-# Italic text
-color body brightblue  white "(^|[^[:alnum:][:punct:]])/[[:alnum:][:punct:]]+/([^[:alnum:][:punct:]]|$)"
-# Underline text
-color body brightblue  white "(^|[^[:alnum:][:punct:]])_[[:alnum:][:punct:]]+_([^[:alnum:][:punct:]]|$)"
+color   quoted      cyan            default     # quote colours
+color   quoted1     brightcyan      default
+color   quoted2     green           default
+color   quoted3     blue            default
+color   quoted4     yellow          default
+color   quoted5     red             default
 
-# New mail
-color index brightyellow default ~N      
-# Old mail
-color index yellow default ~O            
-# Forwarded mail
-color index magenta default ~F          
-# Tagged mail
-color index blue default ~T             
-# Deleted mail
-color index red default ~D              
+color   body        green           default     "^gpg: Good signature from"
+color   body        brightred       default     "^gpg: Bad signature from"
+color   body        brightred       default     "^gpg: BAD signature from"
+color   body        brightred       default     "^gpg: Note: This key has expired!"
+color   body        brightyellow    default     "^gpg: WARNING: This key is not certified with a trusted signature!"
+color   body        brightyellow    default     "^gpg:          There is no indication that the signature belongs to the owner."
+color   body        brightyellow    default     "^gpg: can't handle these multiple signatures"
+color   body        brightyellow    default     "^gpg: signature verification suppressed"
+color   body        brightyellow    default     "^gpg: invalid node with packet of type"
 
