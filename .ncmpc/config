@@ -1,0 +1,18 @@
+enable-mouse = no
+screen-list = playlist browse
+seek-time = 3
+welcome-screen-list = no
+list-format = "%artist% - %album% - %track% - %title%"
+status-format = "%artist% - %title%"
+visible-bitrate = yes
+
+enable-colors = yes
+color title = cyan
+color title-bold = cyan
+color line = cyan
+color list = white
+color list-bold = cyan,reverse
+color progressbar = cyan
+color status-state = cyan
+color status-song = white
+color status-time = white
