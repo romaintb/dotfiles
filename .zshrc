@@ -17,7 +17,13 @@ export PATH="/usr/local/bin:$HOME/bin:$HOME/.rbenv/bin:/usr/local/opt/go/libexec
 export GOPATH="$HOME/.go"
 export LARAVEL_ENV="local"
 export NODE_ENV="dev"
+
+export NVM_DIR="/home/romain/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+source ~/perl5/perlbrew/etc/bashrc
 eval "$(rbenv init -)"
+
 
 case `uname` in
     Darwin)
@@ -28,3 +34,6 @@ case `uname` in
         #foo
         ;;
 esac
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
