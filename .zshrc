@@ -23,6 +23,7 @@ export NVM_DIR="/home/romain/.nvm"
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 source ~/perl5/perlbrew/etc/bashrc
 eval "$(rbenv init -)"
+source ~/.nvm/nvm.sh
 
 
 case `uname` in
