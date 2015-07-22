@@ -21,7 +21,7 @@ export NODE_ENV="dev"
 export NVM_DIR="/home/romain/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-source ~/perl5/perlbrew/etc/bashrc
+[[ -s "~/perl5/perlbrew/etc/bashrc" ]] && source ~/perl5/perlbrew/etc/bashrc
 eval "$(rbenv init -)"
 source ~/.nvm/nvm.sh
 
