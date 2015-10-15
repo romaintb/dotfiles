@@ -18,6 +18,10 @@ export GOPATH="$HOME/.go"
 export LARAVEL_ENV="local"
 export NODE_ENV="dev"
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 export NVM_DIR="/home/romain/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
@@ -36,5 +40,4 @@ case `uname` in
         ;;
 esac
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+alias tig='tig --all'
