@@ -24,3 +24,5 @@ urxvt*loginShell:	true
 urxvt*inheritPixmap:true
 urxvt*tint:         black
 urxvt*shading:      10
+URxvt*color4: RoyalBlue
+URxvt*color12: RoyalBlue
