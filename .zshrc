@@ -40,4 +40,4 @@ case `uname` in
         ;;
 esac
 
-alias tig='tig --all'
+#alias tig='tig --all'
