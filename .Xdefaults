@@ -18,11 +18,11 @@ urxvt*background:	black
 urxvt*scrollBar:	false
 urxvt*cursorColor:	green
 urxvt*foreground:	lightgrey
-urxvt*font:	-*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*
+urxvt*font:	-*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
 urxvt*charClass:	33:48,35:48,37-38:48,43-47:48,58:48,61:48,63-64:48,95:48,126:48
 urxvt*loginShell:	true
-urxvt*inheritPixmap:true
-urxvt*tint:         black
-urxvt*shading:      10
+!urxvt*inheritPixmap:true
+!urxvt*tint:         black
+!urxvt*shading:      10
 URxvt*color4: RoyalBlue
 URxvt*color12: RoyalBlue

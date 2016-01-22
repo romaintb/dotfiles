@@ -1,0 +1,3 @@
+feh --bg-scale /home/romain/Downloads/03928_atlantisnexusnebula_1920x1080.jpg
+xbindkeys
+setxkbmap us intl
