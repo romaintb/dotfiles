@@ -12,3 +12,7 @@ export NODE_ENV="dev"
 export NVM_DIR="/home/romain/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 eval "$(rbenv init -)"
+
+# bug with irssi where only half of the screen scrolls and suck bugs ...
+alias irssi='TERM=screen irssi'
+
