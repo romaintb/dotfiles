@@ -3,5 +3,7 @@ xset m 0 0
 xset -b
 setxkbmap us intl
 eval $(ssh-agent -s)
+dropbox &
 xscreensaver &
-gnome-settings-daemon &
+xbindkeys &
+feh --bg-scale /home/romain/Downloads/03928_atlantisnexusnebula_1920x1080.jpg &
