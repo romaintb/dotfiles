@@ -1,0 +1,11 @@
+[user]
+	email = romain@doxin.net
+	name = Romain Bertrand
+	signingkey = 2D7A3D09
+[core]
+	pager = cat
+	editor = vim
+[fetch]
+	prune = true
+[commit]
+	gpgsign = true
