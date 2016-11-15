@@ -16,7 +16,6 @@ eval "$(rbenv init -)"
 alias irssi='TERM=screen irssi'
 
 alias rails="bundle exec rails"
-alias rials="rails"
 alias rc="rails c"
 alias rs="rails s"
 alias rt="rails test"
@@ -24,6 +23,10 @@ alias rr="rails rubocop"
 alias rake="bundle exec rake"
 alias gfp="git fetch -p --all"
 alias gpr="git pull --rebase"
-alias grpe="grep"
 alias tiga="tig --all"
+
+# I just can't fucking type :(
+alias rials="rails"
+alias grpe="grep"
 alias cim="vim"
+alias apci="acpi"
