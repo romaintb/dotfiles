@@ -12,6 +12,10 @@ export NVM_DIR="/home/romain/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 eval "$(rbenv init -)"
 
+# magical fucking line to fix the weird colors on archlinux
+# (like black background of dirs)
+eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
+
 # bug with irssi where only half of the screen scrolls and suck bugs ...
 alias irssi='TERM=screen irssi'
 
