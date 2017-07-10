@@ -1,3 +1,5 @@
+#zmodload zsh/zprof
+
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="avit"
 plugins=(git archlinux bundler docker gem sudo tmux themes)
@@ -9,7 +11,8 @@ export PATH="/usr/local/bin:$HOME/bin:$HOME/.rbenv/bin:$PATH"
 export NVM_DIR="/home/romain/.nvm"
 #export NODE_ENV="dev"
 
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# nvm is REALLY too slow to boot :(
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 eval "$(rbenv init -)"
 
 # magical fucking line to fix the weird colors on archlinux
