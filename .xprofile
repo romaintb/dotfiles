@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 xset m 0 0
 xset -b
+xsetroot -solid gray15
 setxkbmap us intl
 eval $(ssh-agent -s)
 eval $(gpg-agent --daemon)
-dropbox &
 xscreensaver &
 xbindkeys &
