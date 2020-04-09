@@ -11,8 +11,7 @@ export PATH="/usr/local/bin:$HOME/bin:$HOME/.rbenv/bin:$PATH"
 export NVM_DIR="/home/romain/.nvm"
 #export NODE_ENV="dev"
 
-# nvm is REALLY too slow to boot :(
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 eval "$(rbenv init -)"
 
 # magical fucking line to fix the weird colors on archlinux
