@@ -4,7 +4,7 @@
 [core]
 	; pager = diff-so-fancy | less --tabs=4 -RFX
 	pager = cat
-	editor = vim
+	editor = nvim
 [fetch]
 	prune = true
 [color]
