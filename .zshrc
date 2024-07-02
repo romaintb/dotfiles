@@ -18,6 +18,8 @@ eval "$(rbenv init -)"
 # magical line to fix the weird colors with `ls` (like black background of dirs)
 #eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
 
+export BAT_THEME="Nord"
+
 # TODO: make a version with fallback to ls
 alias ls="exa -hgbH --git --group-directories-first"
 alias la="exa -lahgbH --git --group-directories-first"
@@ -47,3 +49,4 @@ alias rdbm="bundle exec rails db:migrate"
 alias rdbr="bundle exec rails db:rollback"
 alias rdbs="bundle exec rails db:setup"
 alias rgm="bundle exec rails generate migration"
+alias cr="cargo run"
