@@ -11,9 +11,14 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nvim
 export TERM=xterm-256color
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/bin/elasticsearch-6.8.18/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.cargo/bin:$PATH"
+export EZA_COLORS="di=1;34"
+export EZA_ICONS_AUTO="true"
 
 eval "$(rbenv init -)"
+
+# rust
+. "$HOME/.cargo/env"
 
 # magical line to fix the weird colors with `ls` (like black background of dirs)
 #eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
@@ -30,6 +35,7 @@ alias tmuxn="tmux new -s \"$(pwd | awk -F '/' '{print $NF}')\""
 alias vim="nvim"
 alias vimrc="vim ~/.config/nvim/init.vim"
 alias zshrc="vim ~/.zshrc"
+alias gca="git commit --amend"
 alias gfp="git fetch -p --all"
 alias gpr="git pull --rebase"
 alias tiga="tig --all"
