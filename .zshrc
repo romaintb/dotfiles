@@ -4,7 +4,7 @@ ZSH_THEME="avit"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 plugins=(git bundler gem rbenv nvm)
 source $ZSH/oh-my-zsh.sh
@@ -19,6 +19,9 @@ eval "$(rbenv init -)"
 
 # rust
 . "$HOME/.cargo/env"
+
+# ssh-agent for spectrwm
+eval $(keychain --eval --quiet)
 
 # magical line to fix the weird colors with `ls` (like black background of dirs)
 #eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
@@ -38,6 +41,7 @@ alias gpr="git pull --rebase"
 alias grep="rg"
 alias grpe="grep"
 alias gti="git"
+alias lg="lazygit"
 alias rc="bundle exec rails console"
 alias rdbc="bundle exec rails db:create"
 alias rdbm="bundle exec rails db:migrate"
@@ -53,3 +57,4 @@ alias vim="nvim"
 alias vimrc="vim ~/.config/nvim/init.vim"
 alias z="zellij"
 alias zshrc="vim ~/.zshrc"
+
