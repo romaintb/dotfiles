@@ -11,7 +11,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nvim
 # export TERM=screen-256color
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 export EZA_COLORS="di=1;34"
 export EZA_ICONS_AUTO="true"
 
@@ -35,6 +36,8 @@ alias diff="colordiff"
 
 alias ag="rg"
 alias cr="cargo run"
+alias cc="cargo check"
+alias cf="cargo fmt"
 alias gca="git commit --amend"
 alias gfp="git fetch -p --all"
 alias gpr="git pull --rebase"
@@ -54,7 +57,7 @@ alias rt="bundle exec rails test"
 alias tg="rg"
 alias tiga="tig --all"
 alias vim="nvim"
-alias vimrc="vim ~/.config/nvim/init.vim"
+alias vimrc="vim ~/.config/nvim/init.lua"
 alias z="zellij"
 alias zshrc="vim ~/.zshrc"
 
