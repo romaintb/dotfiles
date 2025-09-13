@@ -28,10 +28,15 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init - zsh)"
 
 # rust
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
 export BAT_THEME="Catppuccin Mocha"
 
+# TODO: make a version with fallback to ls
+alias ls="eza -hgbH --git --group-directories-first"
+alias la="eza -lahgbH --git --group-directories-first"
+# alias diff="colordiff"
+alias diff="delta"
 alias ag="rg"
 alias c="claude"
 alias cc="cargo check"

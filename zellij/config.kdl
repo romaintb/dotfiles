@@ -277,7 +277,28 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "catppuccin-macchiato"
+// theme "catppuccin-macchiato"
+theme "catppuccin-mocha" {
+    fg "#cdd6f4"
+    bg "#1e1e2e"
+    black "#45475a"
+    red "#f38ba8"
+    green "#a6e3a1"
+    yellow "#f9e2af"
+    blue "#89b4fa"
+    magenta "#f5c2e7"
+    cyan "#94e2d5"
+    white "#bac2de"
+    orange "#fab387"
+    bright_black "#585b70"
+    bright_red "#f38ba8"
+    bright_green "#a6e3a1"
+    bright_yellow "#f9e2af"
+    bright_blue "#89b4fa"
+    bright_magenta "#f5c2e7"
+    bright_cyan "#94e2d5"
+    bright_white "#a6adc8"
+}
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -458,3 +479,10 @@ show_startup_tips false
 // Default: true
 // 
 // show_release_notes false
+
+layout {
+    pane
+    tab_bar {
+        hide_when_only_one_tab true
+    }
+}
