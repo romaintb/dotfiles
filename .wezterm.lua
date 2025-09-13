@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
+-- config.color_scheme = 'Catppuccin Mocha'
 config.color_scheme = 'Catppuccin Macchiato'
 config.font = wezterm.font('FiraCode Nerd Font', { weight = 'Medium' })
 config.font_size = 9.0
