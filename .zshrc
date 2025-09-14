@@ -18,6 +18,10 @@ export EZA_ICONS_AUTO="true"
 
 eval "$(rbenv init -)"
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
 # rust
 . "$HOME/.cargo/env"
 
@@ -27,24 +31,28 @@ eval $(keychain --eval --quiet)
 # magical line to fix the weird colors with `ls` (like black background of dirs)
 #eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
 
-export BAT_THEME="Nord"
-
-# TODO: make a version with fallback to ls
-alias ls="eza -hgbH --git --group-directories-first"
-alias la="eza -lahgbH --git --group-directories-first"
-alias diff="colordiff"
+export BAT_THEME="Catppuccin Mocha"
 
 alias ag="rg"
-alias cr="cargo run"
 alias cc="cargo check"
 alias cf="cargo fmt"
+alias claude="/home/romain/.claude/local/claude"
+alias cr="cargo run"
+alias cu="cargo update"
+alias diff="delta"
 alias gca="git commit --amend"
 alias gfp="git fetch -p --all"
 alias gpr="git pull --rebase"
 alias grep="rg"
 alias grpe="grep"
 alias gti="git"
+alias la="eza -lahgbH --git --group-directories-first"
 alias lg="lazygit"
+alias ls="eza -hgbH --git --group-directories-first"
+alias oc="opencode ."
+alias osi="yay -S"
+alias oss="yay -Ss"
+alias osu="yay -Suuy"
 alias rc="bundle exec rails console"
 alias rdbc="bundle exec rails db:create"
 alias rdbm="bundle exec rails db:migrate"
@@ -59,5 +67,6 @@ alias tiga="tig --all"
 alias vim="nvim"
 alias vimrc="vim ~/.config/nvim/init.lua"
 alias z="zellij"
+alias zreload="source ~/.zshrc"
 alias zshrc="vim ~/.zshrc"
 
