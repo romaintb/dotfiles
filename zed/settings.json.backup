@@ -17,7 +17,6 @@
     "show": "never"
   },
   "terminal": {
-    "font_family": "FiraCode Nerd Font",
     "font_size": 12.0
   },
   "git": {
@@ -29,11 +28,7 @@
       "show_commit_summary": false
     }
   },
-  "buffer_font_family": "FiraCode Nerd Font",
-  "buffer_font_weight": 400.0,
-  "buffer_font_features": {
-    "calt": true
-  },
+  "buffer_font_weight": 500.0,
   "indent_guides": {
     "enabled": false,
     "line_width": 0,
