@@ -1,0 +1,72 @@
+configuration {
+    /* Custom key bindings for power users */
+
+    /* Advanced navigation */
+    kb-row-tab: "Tab,Control+i";
+    kb-element-next: "Tab";
+    kb-element-prev: "ISO_Left_Tab";
+
+    /* Vi-like navigation */
+    kb-row-up: "Up,Control+p,ISO_Left_Tab,k";
+    kb-row-down: "Down,Control+n,j";
+    kb-row-left: "Control+Page_Up,h";
+    kb-row-right: "Control+Page_Down,l";
+
+    /* Jump to first/last */
+    kb-row-first: "Home,KP_Home,g";
+    kb-row-last: "End,KP_End,G";
+
+    /* Page navigation */
+    kb-page-prev: "Page_Up,Control+u";
+    kb-page-next: "Page_Down,Control+d";
+
+    /* Quick selection */
+    kb-row-select: "Control+space,Insert";
+
+    /* Multiple selection modes */
+    kb-accept-entry: "Control+j,Control+m,Return,KP_Enter";
+    kb-accept-custom: "Control+Return,Shift+Return";
+    kb-accept-alt: "Alt+Return";
+
+    /* Advanced editing */
+    kb-move-word-back: "Alt+b,Control+Left";
+    kb-move-word-forward: "Alt+f,Control+Right";
+    kb-remove-word-back: "Control+Alt+h,Control+BackSpace,Control+w";
+    kb-remove-word-forward: "Control+Alt+d,Alt+d";
+    kb-remove-to-eol: "Control+k";
+    kb-remove-to-sol: "Control+u";
+
+    /* Mode switching with numbers */
+    kb-custom-1: "Alt+1,F1";
+    kb-custom-2: "Alt+2,F2";
+    kb-custom-3: "Alt+3,F3";
+    kb-custom-4: "Alt+4,F4";
+    kb-custom-5: "Alt+5,F5";
+    kb-custom-6: "Alt+6,F6";
+    kb-custom-7: "Alt+7,F7";
+    kb-custom-8: "Alt+8,F8";
+    kb-custom-9: "Alt+9,F9";
+
+    /* Quick access with Super key */
+    kb-select-1: "Super+1";
+    kb-select-2: "Super+2";
+    kb-select-3: "Super+3";
+    kb-select-4: "Super+4";
+    kb-select-5: "Super+5";
+
+    /* Toggle features */
+    kb-toggle-case-sensitivity: "grave,dead_grave,Control+s";
+    kb-toggle-sort: "Alt+grave,Control+o";
+
+    /* Screenshot */
+    kb-screenshot: "Alt+S,Print";
+
+    /* Delete entry */
+    kb-delete-entry: "Shift+Delete,Control+d";
+
+    /* Clear input */
+    kb-clear-line: "Control+l,Escape";
+
+    /* Cancel operations */
+    kb-cancel: "Escape,Control+g,Control+bracketleft,Control+c";
+}
