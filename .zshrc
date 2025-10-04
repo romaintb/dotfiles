@@ -4,6 +4,10 @@ ZSH_THEME="avit"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
+if [ -z "$SSH_AUTH_SOCK" ]; then
+  eval "$(ssh-agent -s)" > /dev/null
+fi
+
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 plugins=(git bundler gem rbenv nvm)
@@ -17,6 +21,7 @@ export EZA_COLORS="di=1;34"
 export EZA_ICONS_AUTO="true"
 
 eval "$(rbenv init -)"
+eval "$(zoxide init zsh)"
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
@@ -25,24 +30,26 @@ eval "$(pyenv init - zsh)"
 # rust
 . "$HOME/.cargo/env"
 
-# ssh-agent for spectrwm
-eval $(keychain --eval --quiet)
-
-# magical line to fix the weird colors with `ls` (like black background of dirs)
-#eval $(dircolors -p | perl -pe 's/^((CAP|S[ET]|O[TR]|M|E)\w+).*/$1 00/' | dircolors -)
-
 export BAT_THEME="Catppuccin Mocha"
 
 alias ag="rg"
+alias c="claude"
 alias cc="cargo check"
+alias cd="z"
 alias cf="cargo fmt"
 alias claude="/home/romain/.claude/local/claude"
 alias cr="cargo run"
+alias ct="cargo test"
 alias cu="cargo update"
 alias diff="delta"
+alias ff="fd | fzf"
+# alias ffp="fzf --preview 'bat --color=always --style=numbers --line-range :{}:{} {}'"
+# alias ffp="fzf --delimiter : --preview 'bat --color=always --style=numbers --line-range {2}: {1}'"
+alias ffp="fd | fzf --preview 'bat --color=always --style=numbers {}'"
 alias gca="git commit --amend"
 alias gfp="git fetch -p --all"
 alias gpr="git pull --rebase"
+alias grc="git rebase --continue"
 alias grep="rg"
 alias grpe="grep"
 alias gti="git"
@@ -64,9 +71,11 @@ alias rs="bundle exec rails server"
 alias rt="bundle exec rails test"
 alias tg="rg"
 alias tiga="tig --all"
+alias v="vim"
 alias vim="nvim"
-alias vimrc="vim ~/.config/nvim/init.lua"
-alias z="zellij"
+alias vimrc="nvim ~/.config/nvim/init.lua"
+alias zn="zellij"
+alias za="zellij attach"
 alias zreload="source ~/.zshrc"
-alias zshrc="vim ~/.zshrc"
+alias zshrc="nvim ~/.zshrc"
 
