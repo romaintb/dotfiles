@@ -9,8 +9,5 @@ config.max_fps = 165
 config.enable_tab_bar = false
 config.cursor_blink_rate = 0
 config.warn_about_missing_glyphs = false
-config.colors = {
-  foreground = 'white'
-}
 
 return config
