@@ -20,7 +20,7 @@
     /* Base settings */
     background-color: transparent;
     text-color: @fg0;
-    font: "JetBrains Mono 11";
+    font: "FiraCode Nerd Font 11";
 }
 
 window {
@@ -53,7 +53,7 @@ inputbar {
 prompt {
     background-color: transparent;
     text-color: @purple;
-    font: "JetBrains Mono Bold 11";
+    font: "FiraCode Nerd Font Bold 11";
 }
 
 textbox-prompt-colon {
