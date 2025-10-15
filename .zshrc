@@ -16,7 +16,10 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim
 # export TERM=screen-256color
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
-export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+# Add Go paths if Go is available
+if command -v go >/dev/null 2>&1; then
+    export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+fi
 export EZA_COLORS="di=1;34"
 export EZA_ICONS_AUTO="true"
 
@@ -79,3 +82,5 @@ alias za="zellij attach"
 alias zreload="source ~/.zshrc"
 alias zshrc="nvim ~/.zshrc"
 
+# wayland shit
+export MOZ_ENABLE_WAYLAND=1
