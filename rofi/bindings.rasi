@@ -65,7 +65,7 @@ configuration {
     kb-delete-entry: "Shift+Delete,Control+d";
 
     /* Clear input */
-    kb-clear-line: "Control+l,Escape";
+    kb-clear-line: "Control+l";
 
     /* Cancel operations */
     kb-cancel: "Escape,Control+g,Control+bracketleft,Control+c";
