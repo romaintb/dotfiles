@@ -1,5 +1,0 @@
-# for thinkpad t440s
-"xbacklight -dec 5"
-  XF86MonBrightnessDown
-"xbacklight -inc 5"
-  XF86MonBrightnessUp

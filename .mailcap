@@ -1,5 +1,0 @@
-#text/html; /usr/local/bin/w3m -I %{charset} -T text/html -dump %s; copiousoutput; description=HTML Text; nametemplate=%s.html
-#text/plain; /usr/local/bin/w3m -I %{charset} -T text/plain %s; copiousoutput; description=Plain Text; nametemplate=%s.txt
-text/html; elinks -dump ; copiousoutput;
-image/jpeg; /usr/bin/open %s & sleep 5
-image/jpg; /usr/bin/open %s & sleep 5

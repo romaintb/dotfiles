@@ -1,2 +1,0 @@
-export CVSROOT=anoncvs@anoncvs.fr.openbsd.org:/cvs
-export PKG_PATH=http://ftp.fr.openbsd.org/pub/OpenBSD/snapshots/packages/i386
