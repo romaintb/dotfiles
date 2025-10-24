@@ -64,4 +64,24 @@ config.enable_tab_bar = false
 config.cursor_blink_rate = 0
 config.warn_about_missing_glyphs = false
 
+config.keys = {
+  {key="Enter", mods="SHIFT", action=wezterm.action{SendString="\x1b\r"}},
+}
+
+-- Mouse bindings to control scroll speed
+config.mouse_bindings = {
+  -- Scroll up with mouse wheel - 3 lines at a time
+  {
+    event = { Down = { streak = 1, button = { WheelUp = 1 } } },
+    mods = 'NONE',
+    action = wezterm.action.ScrollByLine(-3),
+  },
+  -- Scroll down with mouse wheel - 3 lines at a time
+  {
+    event = { Down = { streak = 1, button = { WheelDown = 1 } } },
+    mods = 'NONE',
+    action = wezterm.action.ScrollByLine(3),
+  },
+}
+
 return config
