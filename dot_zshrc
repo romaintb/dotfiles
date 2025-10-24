@@ -77,10 +77,27 @@ alias tiga="tig --all"
 alias v="vim"
 alias vim="nvim"
 alias vimrc="nvim ~/.config/nvim/init.lua"
-alias zn="zellij"
-alias za="zellij attach"
 alias zreload="source ~/.zshrc"
 alias zshrc="nvim ~/.zshrc"
+
+# Smart zellij launcher with directory-based theme switching
+function zn() {
+  local current_dir="$(pwd)"
+  if [[ "$current_dir" == *"/work/cocoon-immo-bis"* ]]; then
+    command zellij options --theme dracula "$@"
+  else
+    command zellij "$@"
+  fi
+}
+
+function za() {
+  local current_dir="$(pwd)"
+  if [[ "$current_dir" == *"/work/cocoon-immo-bis"* ]]; then
+    command zellij attach "$@" options --theme dracula
+  else
+    command zellij attach "$@"
+  fi
+}
 
 # wayland shit
 export MOZ_ENABLE_WAYLAND=1

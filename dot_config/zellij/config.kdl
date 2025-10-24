@@ -298,6 +298,31 @@ theme "catppuccin-mocha" {
     bright_cyan "#94e2d5"
     bright_white "#a6adc8"
 }
+
+// Dracula Soft theme for cocoon-immo-bis
+themes {
+    dracula {
+        fg "#e9e9f4"
+        bg "#282a36"
+        black "#21222c"
+        red "#e8616a"
+        green "#8aff80"
+        yellow "#ffca80"
+        blue "#bd93f9"
+        magenta "#ff79c6"
+        cyan "#8be9fd"
+        white "#e9e9f4"
+        orange "#ffca80"
+        bright_black "#6272a4"
+        bright_red "#e8616a"
+        bright_green "#8aff80"
+        bright_yellow "#ffca80"
+        bright_blue "#bd93f9"
+        bright_magenta "#ff79c6"
+        bright_cyan "#8be9fd"
+        bright_white "#f7f7fb"
+    }
+}
  
 // Choose the base input mode of zellij.
 // Default: normal
