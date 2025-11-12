@@ -4,14 +4,13 @@ ZSH_THEME="avit"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-if [ -z "$SSH_AUTH_SOCK" ]; then
-  eval "$(ssh-agent -s)" > /dev/null
-fi
-
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 plugins=(git bundler gem rbenv nvm)
 source $ZSH/oh-my-zsh.sh
+
+# SSH agent via systemd socket activation
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 export EDITOR=nvim
 # export TERM=screen-256color
