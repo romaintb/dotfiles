@@ -56,7 +56,7 @@ end)
 
 -- Default theme
 config.color_scheme = 'Catppuccin Macchiato'
-config.font = wezterm.font('FiraCode Nerd Font', { weight = 'Medium' })
+config.font = wezterm.font('JetBrains Mono', { weight = 700 })
 config.font_size = 9.0
 config.underline_position = -2
 config.max_fps = 165
@@ -65,7 +65,7 @@ config.cursor_blink_rate = 0
 config.warn_about_missing_glyphs = false
 
 config.keys = {
-  {key="Enter", mods="SHIFT", action=wezterm.action{SendString="\x1b\r"}},
+  { key = "Enter", mods = "SHIFT", action = wezterm.action { SendString = "\x1b\r" } },
 }
 
 -- Mouse bindings to control scroll speed
