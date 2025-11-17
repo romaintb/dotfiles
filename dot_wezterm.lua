@@ -56,7 +56,8 @@ end)
 
 -- Default theme
 config.color_scheme = 'Catppuccin Macchiato'
-config.font = wezterm.font('JetBrains Mono', { weight = 700 })
+-- config.font = wezterm.font('FiraCode Nerd Font', { weight = 'Medium' })
+config.font = wezterm.font('JetBrains Mono Nerd Font', { weight = 700 })
 config.font_size = 9.0
 config.underline_position = -2
 config.max_fps = 165
