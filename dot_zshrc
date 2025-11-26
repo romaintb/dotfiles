@@ -22,8 +22,14 @@ fi
 export EZA_COLORS="di=1;34"
 export EZA_ICONS_AUTO="true"
 
+
+# Load local Zsh configurations and secrets (not tracked by Git)
+if [ -f "$DOTFILES_DIR/dot_zshrc_local" ]; then
+    source "$DOTFILES_DIR/dot_zshrc_local"
+fi
+
+
 eval "$(rbenv init -)"
-eval "$(zoxide init zsh)"
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
@@ -34,26 +40,17 @@ eval "$(pyenv init - zsh)"
 
 export BAT_THEME="Catppuccin Mocha"
 
-alias ag="rg"
 alias c="claude"
 alias cc="cargo check"
-alias cd="z"
 alias cf="cargo fmt"
 alias cr="cargo run"
 alias ct="cargo test"
 alias cu="cargo update"
 alias diff="delta"
-alias ff="fd | fzf"
-# alias ffp="fzf --preview 'bat --color=always --style=numbers --line-range :{}:{} {}'"
-# alias ffp="fzf --delimiter : --preview 'bat --color=always --style=numbers --line-range {2}: {1}'"
-alias ffp="fd | fzf --preview 'bat --color=always --style=numbers {}'"
 alias gca="git commit --amend"
 alias gfp="git fetch -p --all"
 alias gpr="git pull --rebase"
 alias grc="git rebase --continue"
-alias grep="rg"
-alias grpe="grep"
-alias gti="git"
 alias la="eza -lahgbH --git --group-directories-first"
 alias lg="lazygit"
 alias ls="eza -hgbH --git --group-directories-first"
