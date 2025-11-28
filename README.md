@@ -1,13 +1,7 @@
 # Dotfiles
 
-My personal dotfiles. Use at your own risk.
-
-## Installation
-
-```bash
-git clone https://github.com/yourusername/dotfiles.git ~/work/dotfiles
-cd ~/work/dotfiles
-./install.sh
-```
-
-The script creates symlinks for all `dot_*` files to your home directory (e.g., `dot_zshrc` → `~/.zshrc`).
+> **⚠️ ARCHIVED**: This repository has been archived and is no longer maintained on GitHub.
+>
+> **New location**: https://codeberg.org/romaintb/dotfiles
+>
+> I've migrated to Codeberg due to GitHub's declining infrastructure quality and shift away from core engineering priorities toward AI integration. Codeberg's nonprofit-driven approach better aligns with open source values.
